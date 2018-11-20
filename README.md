@@ -1,6 +1,6 @@
 <img src="/images/l4os.svg" width="200" height="200" alt="l4os" align="right">
 
-# Logos for open source 
+# Logos for Open Source 
 
 Hello! I am Nadya. I live in Berlin, study interface design in [FHP](https://www.fh-potsdam.de) and work as an intern at [LucasFonts](https://www.lucasfonts.com/home/). I often use open source software at the university and at work, therefore I want to contribute back with something that I can do best. My goal is to help open source projects gain popularity through improved recognition. To accomplish this goal, I offer free logos for open source projects.
 
