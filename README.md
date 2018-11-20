@@ -1,4 +1,4 @@
-<img src="/images/l4os.svg" width="200" height="200" alt="l4os">
+<img src="/images/l4os.svg" width="200" height="200" alt="l4os" align="right">
 
 # Logos for open source 
 
