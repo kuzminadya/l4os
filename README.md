@@ -1,12 +1,10 @@
-# l4os
+<img src="/images/l4os.svg" width="200" height="200" alt="l4os">
 
-## Logos for open source 
-
-<img src="/images/l4os.svg" width="200 px" height="200 px">
+# Logos for open source 
 
 Hello! I am Nadya. I live in Berlin, study interface design in [FHP](https://www.fh-potsdam.de) and work as an intern at [LucasFonts](https://www.lucasfonts.com/home/). I often use open source software at the university and at work, therefore I want to contribute back with something that I can do best. My goal is to help open source projects gain popularity through improved recognition. To accomplish this goal, I offer free logos for open source projects.
 
-How to participate:
+### How to participate:
 
 1. Make sure that your project has [a good README](https://opensource.com/open-organization/17/10/readme-maturity-model)
 2. [Create an issue](https://github.com/kuzminadya/l4os/issues/new) with a link to your project
