@@ -11,10 +11,10 @@
     </head>
     <body>
         <div class="container">
-            <div class="header-about aboutExpand">
+            <div class="header-about" id="about-link">
                 <a href="">ABOUT</a>
             </div>
-            <div class="about-main" id="aboutMainId">
+            <div class="about-main" id="about-main">
                 <div class="about">
                     Hello! I am Nadya. I live in Berlin, study interface design in <a href="https://www.fh-potsdam.de/interfacedesign/">FHP</a> and work as an intern at <a href="https://www.lucasfonts.com/home/">LucasFonts</a>. I often use open source software at the university and at work, therefore I want to contribute back with something that I can do best. My goal is to help open source projects gain popularity through improved recognition. To accomplish this goal, I offer free logos for open source projects.
                     <h4>
@@ -73,51 +73,30 @@
 </html>
 
 <script>
+const gallery = document.querySelector('#gallery-main');
+const aboutMain = document.querySelector('#about-main');
+const aboutLink = document.querySelector('#about-link');
 
-function classToggle() {
-    this.classList.toggle('gallery-collapse');
-    this.classList.toggle('gallery-expand');
-}
-document.querySelector('#gallery-main').addEventListener('click', classToggle); 
+gallery.addEventListener('click', galleryToggle); 
+aboutMain.addEventListener('click', galleryCollapse);
+aboutLink.addEventListener('click', galleryCollapse);
 
-imageLink = document.querySelectorAll('a.insideLink');
+const imageLink = document.querySelectorAll('a.insideLink');
 imageLink.forEach(function(linkNode){
     linkNode.addEventListener('click', function(e){
         e.stopPropagation(e);
-        console.log(e);
     })
 });
 
-
-
-aboutMainId = document.querySelector('#aboutMainId');
-galleryCollapse=document.querySelector('#gallery-main');
-
-aboutMainId.addEventListener('click', classChange);
-
-function classChange(galleryCollapse) {
-    this.classList.add('gallery-collapse');
-    this.classList.remove('gallery-expand');
+function galleryToggle(e) {
+    e.preventDefault();
+    gallery.classList.toggle('gallery-collapse');
+    gallery.classList.toggle('gallery-expand');
 }
 
- 
-
-
-
-
-// aboutExpand.forEach(function(e){
-//     e.addEventListener('click', function(){
-//     document.querySelectorAll('.gallery-expand').addEventListener('click', classChange); 
-//     });
-// });
-
-// document.getElementById("MyID").className =
-//     document.getElementById("MyID").className.replace(/\bMyClass\b/,'');
-
-
-// document.getElementById("aboutMainId").classList.add('MyClass');
-// document.getElementById("MyElement").classList.remove('MyClass');
-// if ( document.getElementById("MyElement").classList.contains('MyClass') )
-// document.getElementById("MyElement").classList.toggle('MyClass');
-
+function galleryCollapse(e) {
+    e.preventDefault();
+    gallery.classList.add('gallery-collapse');
+    gallery.classList.remove('gallery-expand');
+}
 </script>
