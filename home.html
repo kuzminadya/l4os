@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <link rel="stylesheet" href="css/stylesheet.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono">  
+    <title>Logo for Open Source</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="header-about aboutExpand">
+                <a href="">ABOUT</a>
+            </div>
+            <div class="about-main" id="aboutMainId">
+                <div class="about">
+                    Hello! I am Nadya. I live in Berlin, study interface design in <a href="https://www.fh-potsdam.de/interfacedesign/">FHP</a> and work as an intern at <a href="https://www.lucasfonts.com/home/">LucasFonts</a>. I often use open source software at the university and at work, therefore I want to contribute back with something that I can do best. My goal is to help open source projects gain popularity through improved recognition. To accomplish this goal, I offer free logos for open source projects.
+                    <h4>
+                    How to participate:
+                    </h4>
+                    <ol>
+                        <li>Make sure that your project has <a href="https://opensource.com/open-organization/17/10/readme-maturity-model"> a good README</a>
+                        </li>
+                    
+                        <li>
+                        <a href="https://github.com/kuzminadya/l4os/issues/new"> Create an issue </a> with a link to your project
+                        </li>    
+                    </ol>
+                    <p>
+                    Depending on my availability, I will choose projects with the best READMEs and work on pull requests, <a href="https://github.com/redux-loop/redux-loop/pull/73"> similar to this one</a>, containing a logo and  <a href="https://choosealicense.com/licenses/cc0-1.0/"> the cc0-1.0 license</a>. It is then up to you to decide whether to merge it!
+                    </p>   
+                </div>  
+            </div>
+            <div class="gallery-collapse" id="gallery-main">
+                <div class="header-gallery">
+                    <a  >GALLERY</a>
+                </div>
+                <div class="gallery-scroll"  >
+                    <div class="gallery">
+                        <div class="logo">
+                            <div class="logo-image forget"> 
+                                <img src="png/forget.png"> 
+                            </div>
+                            <!-- <div class="logo-link"> -->
+                                <a  class="rotate insideLink" href="https://github.com/aryszka/forget">https://github.com/aryszka/forget</a>
+                            <!-- </div> -->
+                        </div>
+                        <div class="logo">
+                            <div class="logo-image tailor"> 
+                                <img src="png/tailor.png"> 
+                            </div>
+                            <a class="rotate insideLink"  href="https://github.com/zalando/tailor">https://github.com/zalando/tailor</a>
+                        </div> 
+                        <div class="logo">
+                            <div class="logo-image "> 
+                                <img src="png/dep.png"> 
+                            </div>
+                            <a class="rotate insideLink" href="https://github.com/depjs">https://github.com/depjs</a>
+                        </div>
+                        <div class="logo">
+                            <div class="logo-image redux-loop"> 
+                                <img src="png/redux-loop.png"> 
+                            </div>
+                            <a  class="rotate insideLink" href="https://github.com/redux-loop/redux-loop">https://github.com/redux-loop/redux-loop</a>
+                        </div>        
+                    </div>
+                </div>
+            </div>    
+        </div>    
+    </body>
+</html>
+
+<script>
+
+function classToggle() {
+    this.classList.toggle('gallery-collapse');
+    this.classList.toggle('gallery-expand');
+}
+document.querySelector('#gallery-main').addEventListener('click', classToggle); 
+
+imageLink = document.querySelectorAll('a.insideLink');
+imageLink.forEach(function(linkNode){
+    linkNode.addEventListener('click', function(e){
+        e.stopPropagation(e);
+        console.log(e);
+    })
+});
+
+
+
+aboutMainId = document.querySelector('#aboutMainId');
+galleryCollapse=document.querySelector('#gallery-main');
+
+aboutMainId.addEventListener('click', classChange);
+
+function classChange(galleryCollapse) {
+    this.classList.add('gallery-collapse');
+    this.classList.remove('gallery-expand');
+}
+
+ 
+
+
+
+
+// aboutExpand.forEach(function(e){
+//     e.addEventListener('click', function(){
+//     document.querySelectorAll('.gallery-expand').addEventListener('click', classChange); 
+//     });
+// });
+
+// document.getElementById("MyID").className =
+//     document.getElementById("MyID").className.replace(/\bMyClass\b/,'');
+
+
+// document.getElementById("aboutMainId").classList.add('MyClass');
+// document.getElementById("MyElement").classList.remove('MyClass');
+// if ( document.getElementById("MyElement").classList.contains('MyClass') )
+// document.getElementById("MyElement").classList.toggle('MyClass');
+
+</script>
