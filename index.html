@@ -41,27 +41,25 @@
                     <div class="gallery">
                         <div class="logo">
                             <div class="logo-image forget"> 
-                                <img src="png/forget.png"> 
+                                <a href="https://github.com/aryszka/forget"><img src="png/forget.png"></a>
                             </div>
-                            <!-- <div class="logo-link"> -->
-                                <a  class="rotate insideLink" href="https://github.com/aryszka/forget">https://github.com/aryszka/forget</a>
-                            <!-- </div> -->
+                                <a class="rotate insideLink" href="https://github.com/aryszka/forget">https://github.com/aryszka/forget</a>
                         </div>
                         <div class="logo">
                             <div class="logo-image tailor"> 
-                                <img src="png/tailor.png"> 
+                                <a href="https://github.com/zalando/tailor"><img src="png/tailor.png"></a>
                             </div>
-                            <a class="rotate insideLink"  href="https://github.com/zalando/tailor">https://github.com/zalando/tailor</a>
+                            <a class="rotate insideLink" href="https://github.com/zalando/tailor">https://github.com/zalando/tailor</a>
                         </div> 
                         <div class="logo">
                             <div class="logo-image "> 
-                                <img src="png/dep.png"> 
+                                <a href="https://github.com/depjs"><img src="png/dep.png"></a>
                             </div>
                             <a class="rotate insideLink" href="https://github.com/depjs">https://github.com/depjs</a>
                         </div>
                         <div class="logo">
                             <div class="logo-image redux-loop"> 
-                                <img src="png/redux-loop.png"> 
+                                <a href="https://github.com/redux-loop/redux-loop"><img src="png/redux-loop.png"></a>
                             </div>
                             <a  class="rotate insideLink" href="https://github.com/redux-loop/redux-loop">https://github.com/redux-loop/redux-loop</a>
                         </div>        
@@ -73,30 +71,30 @@
 </html>
 
 <script>
-const gallery = document.querySelector('#gallery-main');
-const aboutMain = document.querySelector('#about-main');
-const aboutLink = document.querySelector('#about-link');
+// const gallery = document.querySelector('#gallery-main');
+// const aboutMain = document.querySelector('#about-main');
+// const aboutLink = document.querySelector('#about-link');
 
-gallery.addEventListener('click', galleryToggle); 
-aboutMain.addEventListener('click', galleryCollapse);
-aboutLink.addEventListener('click', galleryCollapse);
+// gallery.addEventListener('click', galleryToggle); 
+// aboutMain.addEventListener('click', galleryCollapse);
+// aboutLink.addEventListener('click', galleryCollapse);
 
-const imageLink = document.querySelectorAll('a.insideLink');
-imageLink.forEach(function(linkNode){
-    linkNode.addEventListener('click', function(e){
-        e.stopPropagation(e);
-    })
-});
+// const imageLink = document.querySelectorAll('a.insideLink');
+// imageLink.forEach(function(linkNode){
+//     linkNode.addEventListener('click', function(e){
+//         e.stopPropagation(e);
+//     })
+// });
 
-function galleryToggle(e) {
-    e.preventDefault();
-    gallery.classList.toggle('gallery-collapse');
-    gallery.classList.toggle('gallery-expand');
-}
+// function galleryToggle(e) {
+//     e.preventDefault();
+//     gallery.classList.toggle('gallery-collapse');
+//     gallery.classList.toggle('gallery-expand');
+// }
 
-function galleryCollapse(e) {
-    e.preventDefault();
-    gallery.classList.add('gallery-collapse');
-    gallery.classList.remove('gallery-expand');
-}
+// function galleryCollapse(e) {
+//     e.preventDefault();
+//     gallery.classList.add('gallery-collapse');
+//     gallery.classList.remove('gallery-expand');
+// }
 </script>

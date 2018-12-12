@@ -24,7 +24,6 @@ body{
         [line11] 1fr 
         [line12] 1fr 
         [end];
-    /* grid-template-rows: repeat(4, auto [row-start]); */
     grid-template-rows: 
     [line-row1] 70px
     [line-row2] 1fr
@@ -52,7 +51,6 @@ a{
     grid-column: line2 / span 1;
     grid-row: line-row1/ span 1;
     font-style: italic;
-    /* padding-bottom: 44px; */
     font-family: 'Space Mono', monospace;
     font-size: 18px;  
 }
@@ -78,7 +76,6 @@ a{
     grid-column: line6 / span 2;
     grid-row: line-row1/ span 1;
     font-style: italic;
-    /* padding-bottom: 44px; */
     justify-content: flex-end;
     font-family: 'Space Mono', monospace;
     font-size: 18px;  
@@ -89,11 +86,6 @@ a{
     padding-right: 20px;
 }
 
-.header-gallery a::before{
-    content: url(icons/Arrow-left.svg);
-    padding-right: 10px;  
-}
-    
 /* / GALLERY/ */
 
 .gallery-scroll{
@@ -113,14 +105,12 @@ a{
     display: flex;
     flex-direction: row;
     height: 100%;
-    /* max-width: 700px; */
     position: relative;
     padding-right: 40%;
 }
 
 a.rotate{
     position: absolute;
-    /* bottom: 45%; */
     right: 30%;
     padding-top: 50px;
     font-size: 14px;
@@ -155,7 +145,6 @@ img {
     width: 200px;
     height: 200px;
     margin-right: 150px;
-    /* max-width: 100%; */
 }
 
 .tailor img {
@@ -206,13 +195,6 @@ img {
 
 #gallery-main.gallery-expand .header-gallery a{  
     right: 20px;
-    position: relative;
-}
-
-#gallery-main.gallery-expand .header-gallery a::before{
-    content: url(icons/Arrow-right.svg);
-    /* padding-right: 10px;   */
-    left: 110px;
     position: relative;
 }
 
@@ -287,6 +269,16 @@ img {
         
     }
 
+    .tailor img {
+        margin: 20px auto 40px auto;
+        min-width: 100%; 
+    }
+
+    .redux-loop img {
+        margin: 20px auto 40px auto;
+        min-width: 100%; 
+    }
+
     a.rotate {
         font-size: 12px;
         color: #424242;
@@ -298,7 +290,6 @@ img {
         transform-origin: unset;
         text-decoration: underline;
         padding: 0;
-        /* left: 1%; */
         right: 1%;
     }
 }
